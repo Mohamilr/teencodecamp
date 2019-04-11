@@ -8,51 +8,71 @@
     <link rel="icon" type="image/x-icon" href="./images/image.jpg" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <style>
+        body{
+            overflow:scroll;
+        }
         #main{
-            width:40%%;
-            display:block;
+/*            width:50%;*/
+            display: block;
             float: left;
             border-style: solid;
             border-top-style: none;
             border-left-style: none;
             border-bottom-style: none;
-            border-right-width:thin;
+            border-right-width: thin;
             padding: 0px 25px ;
         }
-        .list ul li{
-            list-style: none;
+        button{
+/*            list-style: none;*/
             text-align: center;
             border-style: solid;
             border-radius: 10px;
-            padding: 10px;
-            margin-bottom: 10px;
+            padding: 0px 20px;
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            position: relative;
+            left: 140px;
         }
 /*       link style*/
         a{
              text-decoration-line: none;
         }
         #aside{
-             width:50%;
-             display:block;
+             width: 50%;
+             display: block;
              float: right;
+             margin-top: 50px;
         }
         img{
             border-radius: 700px;
         }
-
+        .social{
+            list-style: none;
+            display: flex;
+            justify-content: center;
+/*            margin-top: 200px;*/
+        }
+        i {
+            font-size: 50px;
+        }
     </style>
 </head>
 <body>
     <!-- main section -->
          <main id="main">
-            <img src="./images/mine.png" alt="my profile image" height="500" />
+            <img src="./images/mine.png" alt="my profile image" height="450" />
 <!--            list div-->
           <div class="list">
+<!--
                 <ul>
                     <li><a href="about">About Me</a></li>
                     <li><a href="blog">Blog</a></li>
                     <li><a href="portfolio">Portfolio</a></li>
                 </ul>
+-->              <button><a href="about">About Me</a></button><br>
+                 <button><a href="blog">Blog</a></button><br>
+                 <button><a href="portfolio">Portfolio</a></button><br>
           </div>
          </main>
    <!-- aside section -->
@@ -71,7 +91,7 @@
             I had my computer training programme on repairs of laptops and software installation packages at Adex synagy computer insitute.
             I am now an expert in computer software istallation. </p>
            </aside>
-            <ul>
+            <ul class="social">
              <li><a href="https://web.facebook.com/moharmmed.darmilorlar?ref=bookmarks"><i class="fab fa-facebook"></i></a></li>
              <li><a href="https://www.linkedin.com/in/ibrahim-mohammed-956a22169/">linkedin</a></li>
              <li><a href="">twitter</a></li>
