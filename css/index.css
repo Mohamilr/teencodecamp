@@ -24,7 +24,7 @@
             text-decoration-line: none;
         }
         a:hover{
-            color: ;
+            color:#ffffff ;
         }
 /*        aside style*/
         h1{
@@ -36,14 +36,15 @@
         p{
             font-size: 20px;
             color: white; 
+             text-align: justify;
         }
         #aside{
              width: 60%;
+             height: 37em;
              display: block;
              float: right;
              margin-top: 20px;
         }
-        
         .social{
             list-style: none;
             text-align: center;
@@ -54,3 +55,50 @@
         i {
             font-size: 50px;
         }
+/*media query*/
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+    body{
+        background-color: brown;
+    }
+    #main{
+        width: 100%;
+        float: none;
+    }
+    img{
+        height: 400px;
+    }
+      .list ul li{
+        width: 60%;
+    }
+    #aside{
+        width: 100%;
+        float: none;
+    }
+    h1{
+        text-align: center; 
+    }
+    p{
+        text-align: center;
+        text-align: justify;
+    }
+}
+    @media only screen and (max-width: 600px) {
+        body{
+            background-color: blue;
+        }
+         img{
+        height: 400px;
+    }
+      .list ul li{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+        h1{
+            text-align: center;
+        }
+        p{
+             width: 100%;
+        }
+    } 
